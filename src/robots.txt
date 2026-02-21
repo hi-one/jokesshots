@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /assets/photos/full/
+Disallow: /assets/photos/thumbs/
+
+Sitemap: https://jokesshots.com/sitemap.xml

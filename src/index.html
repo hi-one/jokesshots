@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOKESSHOTS — Photography by Joker</title>
+    <meta name="description" content="JOKESSHOTS — Editorial, portrait, and creative photography. Based in Europe. Available worldwide.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📷</text></svg>">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- NAVIGATION — Gakuyen-style clean horizontal -->
+    <nav class="nav" id="nav">
+        <a href="#" class="nav-logo">JOKESSHOTS</a>
+        <div class="nav-links" id="navLinks">
+            <a href="#work" class="nav-link">Work</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <a href="https://instagram.com/jokesshots" target="_blank" rel="noopener noreferrer" class="nav-link nav-link--social">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            </a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- MOBILE MENU OVERLAY -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#work" class="mobile-menu-link">Work</a>
+        <a href="#about" class="mobile-menu-link">About</a>
+        <a href="#contact" class="mobile-menu-link">Contact</a>
+        <a href="https://instagram.com/jokesshots" target="_blank" rel="noopener noreferrer" class="mobile-menu-link mobile-menu-link--small">Instagram</a>
+    </div>
+
+    <!-- HERO — Fullscreen video with rounded container -->
+    <section class="hero" id="hero">
+        <!-- Availability badge -->
+        <div class="availability-badge">
+            <span class="availability-dot"></span>
+            <span class="availability-text">Available for Inquiries</span>
+        </div>
+
+        <div class="hero-video-container">
+            <div class="hero-video-wrap">
+                <video class="hero-video" autoplay muted loop playsinline poster="assets/photos/placeholder-3.jpg"
+                       data-src-mobile="assets/showreel-mobile.mp4"
+                       data-src-desktop="assets/showreel-desktop.mp4">
+                </video>
+                <div class="hero-overlay"></div>
+            </div>
+        </div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="hero-title-line">JOKES</span>
+                <span class="hero-title-line">SHOTS</span>
+            </h1>
+            <p class="hero-tagline">
+                <span class="tagline-muted">Capturing</span>
+                <span class="tagline-highlight">raw moments</span>
+                <span class="tagline-muted">that</span>
+                <span class="tagline-highlight">hit different</span>
+                <span class="tagline-muted">&mdash;</span>
+                <span class="tagline-highlight">emotion</span>
+                <span class="tagline-muted">compressed into a</span>
+                <span class="tagline-highlight">single frame.</span>
+            </p>
+        </div>
+
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="hero-scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- WORK — Gakuyen-style filter + mixed grid -->
+    <section class="section section--dark" id="work">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Selected Work</h2>
+                <div class="filter-bar">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="artist">Artist</button>
+                    <button class="filter-btn" data-filter="event">Event</button>
+                    <button class="filter-btn" data-filter="personal">Personal</button>
+                </div>
+            </div>
+
+            <div class="gallery-grid">
+
+                <a href="pages/ice-cube.html" class="gallery-item gallery-item--wide" data-category="artist" data-artist="Ice Cube">
+                    <div class="gallery-item-img">
+                        <img src="assets/photos/medium/ice-cube/8.jpg" alt="Ice Cube" loading="lazy">
+                    </div>
+                    <div class="gallery-item-logo">
+                        <span class="gallery-logo-text">ICE CUBE</span>
+                    </div>
+                    <div class="gallery-item-info">
+                        <span class="gallery-item-meta">Artist</span>
+                    </div>
+                </a>
+
+                <a href="pages/burna-boy.html" class="gallery-item" data-category="artist" data-artist="Burna Boy">
+                    <div class="gallery-item-img">
+                        <img src="assets/photos/medium/burna-boy/4-7.jpg" alt="Burna Boy" loading="lazy">
+                    </div>
+                    <div class="gallery-item-logo">
+                        <span class="gallery-logo-text">BURNA BOY</span>
+                    </div>
+                    <div class="gallery-item-info">
+                        <span class="gallery-item-meta">Artist</span>
+                    </div>
+                </a>
+
+                <a href="pages/kaytranada.html" class="gallery-item" data-category="artist" data-artist="KAYTRANADA">
+                    <div class="gallery-item-img">
+                        <img src="assets/photos/medium/kaytranada/shotbyjoker-68.jpg" alt="KAYTRANADA" loading="lazy">
+                    </div>
+                    <div class="gallery-item-logo">
+                        <span class="gallery-logo-text">KAYTRANADA</span>
+                    </div>
+                    <div class="gallery-item-info">
+                        <span class="gallery-item-meta">Artist</span>
+                    </div>
+                </a>
+
+                <a href="pages/larry-june.html" class="gallery-item" data-category="artist" data-artist="Larry June">
+                    <div class="gallery-item-img">
+                        <img src="assets/photos/medium/larry-june/editedbyjoker-107.jpg" alt="Larry June" loading="lazy">
+                    </div>
+                    <div class="gallery-item-logo">
+                        <span class="gallery-logo-text">LARRY JUNE</span>
+                    </div>
+                    <div class="gallery-item-info">
+                        <span class="gallery-item-meta">Artist</span>
+                    </div>
+                </a>
+
+                <a href="pages/boondawg.html" class="gallery-item" data-category="artist" data-artist="Boondawg">
+                    <div class="gallery-item-img">
+                        <img src="assets/photos/medium/boondawg/editedbyjoker-71.jpg" alt="Boondawg" loading="lazy">
+                    </div>
+                    <div class="gallery-item-logo">
+                        <span class="gallery-logo-text">BOONDAWG</span>
+                    </div>
+                    <div class="gallery-item-info">
+                        <span class="gallery-item-meta">Artist</span>
+                    </div>
+                </a>
+
+                <a href="pages/soulside.html" class="gallery-item gallery-item--wide" data-category="event" data-artist="Soulside">
+                    <div class="gallery-item-img">
+                        <img src="assets/photos/medium/soulside/editedbyjoker-48.jpg" alt="Soulside" loading="lazy">
+                    </div>
+                    <div class="gallery-item-logo">
+                        <span class="gallery-logo-text">SOULSIDE</span>
+                    </div>
+                    <div class="gallery-item-info">
+                        <span class="gallery-item-meta">Event</span>
+                    </div>
+                </a>
+
+                <a href="pages/luciano.html" class="gallery-item" data-category="artist" data-artist="Luciano">
+                    <div class="gallery-item-img">
+                        <img src="assets/photos/medium/luciano/1-7.jpg" alt="Luciano" loading="lazy">
+                    </div>
+                    <div class="gallery-item-logo">
+                        <span class="gallery-logo-text">LUCIANO</span>
+                    </div>
+                    <div class="gallery-item-info">
+                        <span class="gallery-item-meta">Artist</span>
+                    </div>
+                </a>
+
+                <a href="pages/og-keemo.html" class="gallery-item" data-category="artist" data-artist="OG Keemo">
+                    <div class="gallery-item-img">
+                        <img src="assets/photos/medium/og-keemo/shotbyjoker-244.jpg" alt="OG Keemo" loading="lazy">
+                    </div>
+                    <div class="gallery-item-logo">
+                        <span class="gallery-logo-text">OG KEEMO</span>
+                    </div>
+                    <div class="gallery-item-info">
+                        <span class="gallery-item-meta">Artist</span>
+                    </div>
+                </a>
+
+                <a href="pages/rin.html" class="gallery-item" data-category="artist" data-artist="RIN">
+                    <div class="gallery-item-img">
+                        <img src="assets/photos/medium/rin/4.jpg" alt="RIN" loading="lazy">
+                    </div>
+                    <div class="gallery-item-logo">
+                        <span class="gallery-logo-text">RIN</span>
+                    </div>
+                    <div class="gallery-item-info">
+                        <span class="gallery-item-meta">Artist</span>
+                    </div>
+                </a>
+
+                <a href="pages/roddy-ricch.html" class="gallery-item" data-category="artist" data-artist="Roddy Ricch">
+                    <div class="gallery-item-img">
+                        <img src="assets/photos/medium/roddy-ricch/11.jpg" alt="Roddy Ricch" loading="lazy">
+                    </div>
+                    <div class="gallery-item-logo">
+                        <span class="gallery-logo-text">RODDY RICCH</span>
+                    </div>
+                    <div class="gallery-item-info">
+                        <span class="gallery-item-meta">Artist</span>
+                    </div>
+                </a>
+
+                <a href="pages/westside-boogie.html" class="gallery-item" data-category="artist" data-artist="Westside Boogie">
+                    <div class="gallery-item-img">
+                        <img src="assets/photos/medium/westside-boogie/7.jpg" alt="Westside Boogie" loading="lazy">
+                    </div>
+                    <div class="gallery-item-logo">
+                        <span class="gallery-logo-text">WESTSIDE BOOGIE</span>
+                    </div>
+                    <div class="gallery-item-info">
+                        <span class="gallery-item-meta">Artist</span>
+                    </div>
+                </a>
+
+                <a href="pages/misc.html" class="gallery-item" data-category="personal" data-artist="Misc">
+                    <div class="gallery-item-img">
+                        <img src="assets/photos/medium/misc/editedbyjoker-14-2.jpg" alt="Misc — Unnamed Moments" loading="lazy">
+                    </div>
+                    <div class="gallery-item-logo">
+                        <span class="gallery-logo-text">MISC</span>
+                    </div>
+                    <div class="gallery-item-info">
+                        <span class="gallery-item-meta">Personal</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY WORK WITH ME -->
+    <section class="section section--dark why-section" id="why">
+        <div class="container">
+            <span class="section-label section-label--light">Why Work With Me</span>
+            <p class="why-text">
+                I don't just <span class="why-highlight">take photos</span> &mdash; I create <span class="why-highlight">visual stories</span> that make people <span class="why-highlight">feel something.</span> Whether it's the <span class="why-highlight">raw energy</span> of a live performance, the <span class="why-highlight">quiet intensity</span> of a portrait session, or the <span class="why-highlight">controlled chaos</span> of a product shoot &mdash; every frame is intentional, every edit is <span class="why-highlight">signature.</span> My clients come back because the work doesn't just <span class="why-highlight">document moments</span> &mdash; it <span class="why-highlight">elevates</span> them.
+            </p>
+        </div>
+    </section>
+
+    <!-- SERVICES — Lena Harrer-style toggle list -->
+    <section class="section section--dark services-section" id="services">
+        <div class="container">
+            <span class="section-label section-label--light">Services</span>
+
+            <div class="accordion-list">
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span class="accordion-number">01</span>
+                        <span class="accordion-title">Artist &amp; Portrait Photography</span>
+                        <span class="accordion-icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="10" y1="4" x2="10" y2="16" class="accordion-icon-v"/><line x1="4" y1="10" x2="16" y2="10"/></svg>
+                        </span>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-content">
+                            <p>Intimate, editorial-quality portraits that capture personality beyond the pose. From press kits to album artwork, every session is tailored to the artist's vision and brand identity. Signature color grading included.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span class="accordion-number">02</span>
+                        <span class="accordion-title">Event &amp; Concert Coverage</span>
+                        <span class="accordion-icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="10" y1="4" x2="10" y2="16" class="accordion-icon-v"/><line x1="4" y1="10" x2="16" y2="10"/></svg>
+                        </span>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-content">
+                            <p>Full event documentation from backstage to main stage. I work fast, stay invisible, and deliver images that feel like you're standing in the crowd. Festivals, club nights, private events &mdash; no moment goes uncaptured.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span class="accordion-number">03</span>
+                        <span class="accordion-title">Creative Direction &amp; Videography</span>
+                        <span class="accordion-icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="10" y1="4" x2="10" y2="16" class="accordion-icon-v"/><line x1="4" y1="10" x2="16" y2="10"/></svg>
+                        </span>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-content">
+                            <p>Beyond the still image. Concept development, mood boards, location scouting, and short-form video content for social and campaigns. Full creative oversight from ideation to final delivery.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span class="accordion-number">04</span>
+                        <span class="accordion-title">Product &amp; Fashion Editorial</span>
+                        <span class="accordion-icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="10" y1="4" x2="10" y2="16" class="accordion-icon-v"/><line x1="4" y1="10" x2="16" y2="10"/></svg>
+                        </span>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-content">
+                            <p>Elevated product and fashion imagery with cinematic grading and editorial sensibility. Lookbooks, campaign shoots, e-commerce &mdash; work that makes your product look like it belongs in a magazine.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARQUEE TICKER — Projects & Artists -->
+    <div class="marquee">
+        <div class="marquee-inner">
+            <span>Burna Boy</span>
+            <span>&middot;</span>
+            <span>Ice Cube</span>
+            <span>&middot;</span>
+            <span>Kaytranada</span>
+            <span>&middot;</span>
+            <span>Larry June</span>
+            <span>&middot;</span>
+            <span>Soulside</span>
+            <span>&middot;</span>
+            <span>OG Keemo</span>
+            <span>&middot;</span>
+            <span>RIN</span>
+            <span>&middot;</span>
+            <span>Roddy Ricch</span>
+            <span>&middot;</span>
+            <span>Luciano</span>
+            <span>&middot;</span>
+            <span>Boondawg</span>
+            <span>&middot;</span>
+            <span>Westside Boogie</span>
+            <span>&middot;</span>
+            <span>Summerjam Festival</span>
+            <span>&middot;</span>
+            <span>HYPE Festival</span>
+            <span>&middot;</span>
+            <span>Burna Boy</span>
+            <span>&middot;</span>
+            <span>Ice Cube</span>
+            <span>&middot;</span>
+            <span>Kaytranada</span>
+            <span>&middot;</span>
+            <span>Larry June</span>
+            <span>&middot;</span>
+            <span>Soulside</span>
+            <span>&middot;</span>
+            <span>OG Keemo</span>
+            <span>&middot;</span>
+            <span>RIN</span>
+            <span>&middot;</span>
+            <span>Roddy Ricch</span>
+            <span>&middot;</span>
+            <span>Luciano</span>
+            <span>&middot;</span>
+            <span>Boondawg</span>
+            <span>&middot;</span>
+            <span>Westside Boogie</span>
+            <span>&middot;</span>
+            <span>Summerjam Festival</span>
+            <span>&middot;</span>
+            <span>HYPE Festival</span>
+            <span>&middot;</span>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section section--dark" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="assets/photos/joker-portrait.jpg" alt="Joker — Photographer &amp; Creative Director" loading="lazy">
+                </div>
+                <div class="about-content">
+                    <span class="section-label section-label--light">About</span>
+                    <h2 class="about-title">Joker</h2>
+                    <p class="about-text">
+                        A gentle giant off-camera &mdash; an absolute menace behind it. What sets Joker apart is how much emotion he compresses into a single frame. Pride, anger, joy, success, love &mdash; sometimes all at once. He can be within breathing range of an Ice Cube or a Burna Boy and still walk away with a candid that feels more honest than a portrait session ever could. From Summerjam&rsquo;s blinding stage lights to the sweat-soaked basements of D&uuml;sseldorf&rsquo;s Soulside, his eye for drama and detail stays the same.
+                    </p>
+                    <p class="about-text">
+                        Then there&rsquo;s the grading. Joker&rsquo;s signature color work takes raw frames and turns them into something that hits different &mdash; the cherry on top of an already loaded image. It&rsquo;s the reason his shots don&rsquo;t just document a moment, they make you feel like you were standing right there.
+                    </p>
+                    <div class="about-stats">
+                        <div class="about-stat">
+                            <span class="about-stat-number">8+</span>
+                            <span class="about-stat-label">Years Experience</span>
+                        </div>
+                        <div class="about-stat">
+                            <span class="about-stat-number">50+</span>
+                            <span class="about-stat-label">Artists Captured</span>
+                        </div>
+                        <div class="about-stat">
+                            <span class="about-stat-number">30+</span>
+                            <span class="about-stat-label">Live Events</span>
+                        </div>
+                    </div>
+                    <div class="about-clients">
+                        <span class="about-clients-label">Selected Clients &amp; Projects</span>
+                        <p class="about-clients-list">Burna Boy &middot; Ice Cube &middot; Kaytranada &middot; Larry June &middot; Roddy Ricch &middot; Westside Boogie &middot; OG Keemo &middot; RIN &middot; Luciano &middot; Boondawg &middot; Soulside &middot; Summerjam Festival &middot; HYPE Festival</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ — Lena Harrer UI + Gakuyen combination -->
+    <section class="section section--dark faq-section" id="faq">
+        <div class="container">
+            <div class="faq-header">
+                <span class="section-label section-label--light">FAQ</span>
+                <h2 class="faq-title">Frequently Asked<br>Questions</h2>
+            </div>
+
+            <div class="accordion-list accordion-list--faq">
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span class="accordion-title">What is your turnaround time?</span>
+                        <span class="accordion-icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="10" y1="4" x2="10" y2="16" class="accordion-icon-v"/><line x1="4" y1="10" x2="16" y2="10"/></svg>
+                        </span>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-content">
+                            <p>Standard delivery is 2&ndash;3 weeks for portrait and editorial work. Event coverage typically ships within 5&ndash;7 business days. Rush delivery is available upon request for an additional fee.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span class="accordion-title">Do you travel for shoots?</span>
+                        <span class="accordion-icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="10" y1="4" x2="10" y2="16" class="accordion-icon-v"/><line x1="4" y1="10" x2="16" y2="10"/></svg>
+                        </span>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-content">
+                            <p>Absolutely. Based in Europe but available worldwide. Travel costs are discussed upfront during the booking process. I've shot across Europe and internationally for artists and brands alike.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span class="accordion-title">What does a typical session include?</span>
+                        <span class="accordion-icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="10" y1="4" x2="10" y2="16" class="accordion-icon-v"/><line x1="4" y1="10" x2="16" y2="10"/></svg>
+                        </span>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-content">
+                            <p>Every session includes pre-production planning, the shoot itself, professional editing with my signature color grading, and delivery of high-resolution files. Creative direction and mood boarding available for larger projects.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span class="accordion-title">Can I use the photos commercially?</span>
+                        <span class="accordion-icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="10" y1="4" x2="10" y2="16" class="accordion-icon-v"/><line x1="4" y1="10" x2="16" y2="10"/></svg>
+                        </span>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-content">
+                            <p>Usage rights are discussed and agreed upon before every project. Standard packages include digital and social media usage. Extended commercial licensing for print, billboard, and advertising campaigns is available.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span class="accordion-title">How do I book a session?</span>
+                        <span class="accordion-icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="10" y1="4" x2="10" y2="16" class="accordion-icon-v"/><line x1="4" y1="10" x2="16" y2="10"/></svg>
+                        </span>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-content">
+                            <p>Reach out via the contact form below or email directly. Share your vision, timeline, and budget &mdash; and I'll put together a tailored proposal. No project is too small or too ambitious.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT BOX -->
+    <section class="contact-box-section" id="contact">
+        <div class="container">
+            <div class="contact-box">
+                <div class="contact-box-left">
+                    <span class="section-label section-label--light">Get in Touch</span>
+                    <h3 class="contact-box-title">Have a project in mind?</h3>
+                    <p class="contact-box-desc">Currently accepting commissions. Let's create something that hits different.</p>
+                </div>
+                <div class="contact-box-right">
+                    <form class="contact-form" id="contactForm" action="#" method="POST">
+                        <div class="contact-box-fields">
+                            <input type="text" name="name" class="contact-input" placeholder="Your name" required>
+                            <input type="email" name="email" class="contact-input" placeholder="Your email" required>
+                            <div class="contact-templates">
+                                <button type="button" class="template-chip" data-template="Hey Joker, I've got a shoot idea that needs your eye. Let's talk dates and vision.">Shoot Inquiry</button>
+                                <button type="button" class="template-chip" data-template="We're throwing an event and need someone who can capture the energy. Interested?">Event Coverage</button>
+                                <button type="button" class="template-chip" data-template="Love your work — I'd like to discuss a collaboration. Here's what I had in mind...">Collab Proposal</button>
+                                <button type="button" class="template-chip" data-template="Need product shots that actually look editorial. Can you work your magic?">Product Shoot</button>
+                            </div>
+                            <textarea name="message" class="contact-input contact-textarea" placeholder="Tell me about your project..." rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="contact-submit">
+                            Send Inquiry
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER — Gakuyen-inspired, black bg, blur-out hero title -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col">
+                    <span class="footer-label">Navigation</span>
+                    <a href="#work" class="footer-link">Work</a>
+                    <a href="#services" class="footer-link">Services</a>
+                    <a href="#about" class="footer-link">About</a>
+                    <a href="#faq" class="footer-link">FAQ</a>
+                </div>
+                <div class="footer-col">
+                    <span class="footer-label">Social</span>
+                    <a href="https://instagram.com/jokesshots" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram</a>
+                    <a href="#" class="footer-link js-email-link">Email</a>
+                </div>
+                <div class="footer-col">
+                    <span class="footer-label">Info</span>
+                    <span class="footer-detail">Based in Europe</span>
+                    <span class="footer-detail">Available Worldwide</span>
+                    <span class="footer-detail">&copy; 2026 JOKESSHOTS</span>
+                </div>
+            </div>
+            <div class="footer-hero-title">
+                <span class="footer-title-line">JOKES</span>
+                <span class="footer-title-line">SHOTS</span>
+            </div>
+            <div class="footer-bottom">
+                <span class="footer-credit">Design &amp; Development by <a href="#">Studio</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <div class="lightbox-counter" id="lightboxCounter"></div>
+        <img class="lightbox-img" id="lightboxImg" src="" alt="">
+        <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="lightbox-next" id="lightboxNext" aria-label="Next">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

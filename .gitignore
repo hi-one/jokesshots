@@ -1,0 +1,25 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Build output
+build/
+
+# Large source video (site uses showreel-desktop.mp4 and showreel-mobile.mp4)
+src/assets/showreel.mp4
+
+# Original photos (not for web, stored separately)
+originals-backup/
+
+# Node (if added later)
+node_modules/
+
+# Logs
+*.log
